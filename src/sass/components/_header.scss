@@ -1,0 +1,20 @@
+.header{
+    width: 100%;
+    height: 5.75em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border: solid 1px;
+
+
+    &__hide{
+        position: absolute;
+        background-color: rgb(60, 60, 60);
+        width: 100%;
+        left:0;
+        
+    }
+    &__show{
+        visibility: hidden;
+    }
+}

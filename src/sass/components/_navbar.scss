@@ -1,0 +1,63 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+
+    &__show {
+        position: relative;
+        visibility: visible;
+        // transition: all .5s;
+    }
+
+    &__hide {
+        visibility: visible;
+
+        @include respond (tab-port) {
+            visibility: hidden;
+            position: relative;
+        }
+    }
+
+    &__items {
+        border-top: none;
+        padding: 0 5em;
+
+        &:hover {
+            color: magenta;
+            border-top: solid 1px;
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        @include respond (tab-port) {
+            display: none;
+        }
+    }
+
+    &__button {
+        display: none;
+        margin-left: 85%;
+
+        @include respond(tab-port) {
+            display: flex;
+            cursor: pointer;
+
+            &:hover {
+                width: 50px;
+            }
+        }
+    }
+}
+
+svg {
+    width: 35px;
+    transition: all .5s;
+
+    &:hover {
+        fill: magenta;
+        width: 40px;
+        transition: all .5s;
+    }
+
+}

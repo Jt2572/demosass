@@ -1,0 +1,65 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__dots {
+        padding-top: 2em;
+        background: none;
+        width: 5%;
+        border: none;
+        display: flex;
+        justify-content: center;
+
+        &__cont {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__dot {
+            height: 7px;
+            width: 7px;
+            border: solid 1px white;
+            border-radius: 10px;
+
+            &:hover {
+                border: solid 1px magenta;
+                background: magenta;
+                transition: all .5s;
+            }
+        }
+    }
+
+    &__buttons {
+        position: absolute;
+        padding: 0em 2em;
+        z-index: 10;
+        margin-top: -5.5em;
+        background: none;
+        border: none;
+
+        &__left {
+            right: 0;
+        }
+    }
+
+    &__slide {
+        width: 100%;
+        height: fit-content;
+
+        &__msg {
+            text-align: center;
+            padding: 1em;
+        }
+
+        &__btns {
+            display: inline;
+            text-align: center;
+            padding: 1em;
+        }
+
+    }
+
+
+}
+
